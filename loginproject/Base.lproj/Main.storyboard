@@ -13,7 +13,7 @@
         <!--메인-->
         <scene sceneID="gUl-PG-7ly">
             <objects>
-                <viewController id="YLN-23-6bE" customClass="ViewController" customModule="loginproject_IF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YLN-23-6bE" customClass="ViewController" customModule="loginproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y8d-qi-rGT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="로그인"/>
                                         <connections>
-                                            <action selector="signIn:" destination="YLN-23-6bE" eventType="touchUpInside" id="6DT-XM-sce"/>
                                             <segue destination="qaG-Gy-vBY" kind="show" id="qcG-fB-fhe"/>
                                         </connections>
                                     </button>
@@ -43,7 +42,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="회원가입"/>
                                         <connections>
-                                            <action selector="signUp:" destination="YLN-23-6bE" eventType="touchUpInside" id="ncD-Oj-xaI"/>
                                             <segue destination="b5J-7q-SOX" kind="show" id="n2b-h9-DEB"/>
                                         </connections>
                                     </button>

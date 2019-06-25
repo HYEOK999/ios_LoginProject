@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -15,17 +17,33 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func signIn(_ sender: Any) {
-    }
-    
-    @IBAction func signUp(_ sender: Any) {
-    }
-    
     @IBAction func googleBtn(_ sender: Any) {
     }
     
     @IBAction func facebookBtn(_ sender: Any) {
+        let fbLoginManager = LoginManager()
+        fbLoginManager.logIn(permissions: ["public_profile","email"], from: self) { (result, error) in
+            if error != nil{
+                AlertService.alertService(msg: error!.localizedDescription, vc: self)
+            }
+            else if result!.isCancelled{
+                return
+            }
+            guard let accessToken = AccessToken.current else {
+                return
+            }
+            
+            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential, completion: { (result, error) in
+                if error != nil{
+                    AlertService.alertService(msg: error!.localizedDescription, vc: self)
+                    return
+                }else{
+                    (UIApplication.shared.delegate as! AppDelegate).configualInitialVC()
+                }
+            })
+        }
     }
-    
 }
 
