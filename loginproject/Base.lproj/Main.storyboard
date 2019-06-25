@@ -13,7 +13,7 @@
         <!--메인-->
         <scene sceneID="gUl-PG-7ly">
             <objects>
-                <viewController storyboardIdentifier="FirstVC" id="YLN-23-6bE" customClass="ViewController" customModule="loginproject_IF" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YLN-23-6bE" customClass="ViewController" customModule="loginproject_IF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y8d-qi-rGT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,15 +47,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-Bp-7eH">
-                                <rect key="frame" x="90" y="572" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbG-Bp-7eH">
+                                <rect key="frame" x="81" y="563" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="구글"/>
+                                <state key="normal" image="icons8-google-48"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ6-Vr-0ew">
-                                <rect key="frame" x="294" y="572" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ6-Vr-0ew">
+                                <rect key="frame" x="285" y="563" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="페북"/>
+                                <state key="normal" image="icons8-facebook-48"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,10 +79,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-Zz-wVC">
-                                <rect key="frame" x="59" y="108" width="318" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBB-V8-hTQ">
                                 <rect key="frame" x="134" y="354" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,14 +119,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-Fm-OqT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-Fm-OqT" customClass="LineButton" customModule="loginproject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="yNd-hV-kip"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="회원가입"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_user" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-Zz-wVC">
+                                <rect key="frame" x="94" y="161" width="255" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -142,7 +146,7 @@
                         <viewLayoutGuide key="safeArea" id="6MV-0v-Cxc"/>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="HCl-58-h8I">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="ATS-ST-co3"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="ATS-ST-co3"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SK-B4-qlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,18 +202,23 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB0-Bg-iEC">
                                 <rect key="frame" x="246" y="281" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="비밀번호찾기"/>
                                 <connections>
                                     <segue destination="bvq-Zd-RYu" kind="show" id="HWI-xl-fgX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSi-wF-wAY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSi-wF-wAY" customClass="LineButton" customModule="loginproject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="ha7-ee-dEr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="로그인"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -222,7 +231,7 @@
                         <viewLayoutGuide key="safeArea" id="5cj-lN-tiK"/>
                     </view>
                     <navigationItem key="navigationItem" title="로그인" id="RCB-dP-Vs7">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="mnc-oh-UQl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="mnc-oh-UQl"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw2-2Q-xN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,13 +253,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-uh-LXO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-uh-LXO" customClass="LineButton" customModule="loginproject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="DmX-Fe-0hk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="확인"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,7 +276,7 @@
                         <viewLayoutGuide key="safeArea" id="h1A-Zt-BWm"/>
                     </view>
                     <navigationItem key="navigationItem" title="비밀번호찾기" id="MNQ-XI-l55">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="0qd-9Q-CKh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="0qd-9Q-CKh"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tr1-a0-ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +286,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gog-7v-k4x">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tsi-fs-T69" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FirstVC" automaticallyAdjustsScrollViewInsets="NO" id="Tsi-fs-T69" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pji-YL-s1s">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -307,4 +320,10 @@
             <point key="canvasLocation" x="2585.507246376812" y="488.83928571428567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseline_keyboard_backspace_black_24dp" width="48" height="48"/>
+        <image name="empty_user" width="224" height="224"/>
+        <image name="icons8-facebook-48" width="48" height="48"/>
+        <image name="icons8-google-48" width="48" height="48"/>
+    </resources>
 </document>
