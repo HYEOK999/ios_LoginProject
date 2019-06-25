@@ -23,6 +23,12 @@ class FindPwViewController: UIViewController {
     }
     
     @IBAction func okBtn(_ sender: Any) {
+        if emailTF.text == ""  {
+            AlertService.alertService(msg: "빈칸이 존재합니다.", vc: self)
+        }
+        else{
+            
+        }
     }
     /*
     // MARK: - Navigation

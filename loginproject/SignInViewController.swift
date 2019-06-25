@@ -25,6 +25,12 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signIn(_ sender: Any) {
+        if emailTF.text == "" || passwordTF.text == "" {
+            AlertService.alertService(msg: "빈칸이 존재합니다.", vc: self)
+        }
+        else{
+            
+        }
     }
     /*
     // MARK: - Navigation
