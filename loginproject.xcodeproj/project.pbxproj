@@ -19,6 +19,7 @@
 		4835390022C29E3000279407 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538FF22C29E3000279407 /* SignUpViewController.swift */; };
 		4835390222C29E4700279407 /* FindPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390122C29E4700279407 /* FindPwViewController.swift */; };
 		4835390422C29E5200279407 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390322C29E5200279407 /* MainViewController.swift */; };
+		4835390622C29EC800279407 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390522C29EC800279407 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		483538FF22C29E3000279407 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4835390122C29E4700279407 /* FindPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewController.swift; sourceTree = "<group>"; };
 		4835390322C29E5200279407 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4835390522C29EC800279407 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				483538FF22C29E3000279407 /* SignUpViewController.swift */,
 				4835390122C29E4700279407 /* FindPwViewController.swift */,
 				4835390322C29E5200279407 /* MainViewController.swift */,
+				4835390522C29EC800279407 /* AlertService.swift */,
 			);
 			path = loginproject;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				4835390222C29E4700279407 /* FindPwViewController.swift in Sources */,
 				483538CE22C28EEF00279407 /* AppDelegate.swift in Sources */,
 				483538FC22C2909F00279407 /* LineButton.swift in Sources */,
+				4835390622C29EC800279407 /* AlertService.swift in Sources */,
 				4835390022C29E3000279407 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
