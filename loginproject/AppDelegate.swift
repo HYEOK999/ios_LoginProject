@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         configualInitialVC()
         return true
     }
@@ -31,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             handled = ApplicationDelegate.shared.application(app, open: url, options: options)
         }
         else{
-            
+            handled = (GIDSignIn.sharedInstance()?.handle(url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: [:]))!
         }
         
         return handled
