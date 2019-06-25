@@ -14,6 +14,7 @@
 		483538D822C28EEF00279407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483538D622C28EEF00279407 /* LaunchScreen.storyboard */; };
 		483538E322C28EEF00279407 /* loginprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538E222C28EEF00279407 /* loginprojectTests.swift */; };
 		483538EE22C28EEF00279407 /* loginprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538ED22C28EEF00279407 /* loginprojectUITests.swift */; };
+		483538FC22C2909F00279407 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538FB22C2909F00279407 /* LineButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		483538E922C28EEF00279407 /* loginprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483538ED22C28EEF00279407 /* loginprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginprojectUITests.swift; sourceTree = "<group>"; };
 		483538EF22C28EEF00279407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		483538FB22C2909F00279407 /* LineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				483538D122C28EEF00279407 /* Main.storyboard */,
 				483538D422C28EEF00279407 /* Assets.xcassets */,
 				483538D622C28EEF00279407 /* LaunchScreen.storyboard */,
+				483538FB22C2909F00279407 /* LineButton.swift */,
 				483538D922C28EEF00279407 /* Info.plist */,
 			);
 			path = loginproject;
@@ -258,6 +261,7 @@
 			files = (
 				483538D022C28EEF00279407 /* ViewController.swift in Sources */,
 				483538CE22C28EEF00279407 /* AppDelegate.swift in Sources */,
+				483538FC22C2909F00279407 /* LineButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
