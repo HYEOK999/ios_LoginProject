@@ -7,6 +7,9 @@ target 'loginproject' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'SVProgressHUD'
 
   # Pods for loginproject
 
