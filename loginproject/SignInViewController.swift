@@ -29,7 +29,12 @@ class SignInViewController: UIViewController {
             AlertService.alertService(msg: "빈칸이 존재합니다.", vc: self)
         }
         else{
-            
+            AuthService.SignIn(email: emailTF.text!, password: passwordTF.text!, onSuccess: {
+                (UIApplication.shared.delegate as! AppDelegate).configualInitialVC()
+                return
+            }) { (error) in
+                AlertService.alertService(msg: error!, vc: self)
+            }
         }
     }
     /*

@@ -36,7 +36,12 @@ class SignUpViewController: UIViewController {
             AlertService.alertService(msg: "빈칸이 존재합니다.", vc: self)
         }
         else{
-            
+            AuthService.SignUp(email: emailTF.text!, password: passwordTF.text!, name: nameTF.text!, age: ageTF.text!, sex: sexTF.text!, onSuccess: {
+                (UIApplication.shared.delegate as! AppDelegate).configualInitialVC()
+                return
+            }) { (error) in
+                AlertService.alertService(msg: error!, vc: self)
+            }
         }
      }
 }

@@ -27,7 +27,12 @@ class FindPwViewController: UIViewController {
             AlertService.alertService(msg: "빈칸이 존재합니다.", vc: self)
         }
         else{
-            
+            AuthService.FindPw(email: emailTF.text!, onSuccess: {
+                self.navigationController?.popViewController(animated: true)
+                return
+            }) { (error) in
+                AlertService.alertService(msg: error!, vc: self)
+            }
         }
     }
     /*
