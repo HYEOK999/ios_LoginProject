@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     @IBAction func signOut(_ sender: Any) {
         AuthService.SignOut(onSuccess: {
             (UIApplication.shared.delegate as! AppDelegate).configualInitialVC()
+            return
         }) { (error) in
             AlertService.alertService(msg: error!, vc: self)
         }

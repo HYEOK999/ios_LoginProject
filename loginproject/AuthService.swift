@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class AuthService{
     static func SignIn(email:String, password:String, onSuccess:@escaping () -> Void, onError:@escaping (_ errorMessage:String?) -> Void ){
@@ -31,7 +32,10 @@ class AuthService{
                 return
             }
             else{
-                onSuccess()
+                let uid = result?.user.uid
+                setUsers(uid: uid!, email: email, name: name, sex: sex, age: age, onSuccess: {
+                    onSuccess()
+                })
             }
         }
     }
@@ -61,5 +65,17 @@ class AuthService{
         }
     }
     
-    
+    static func setUsers(uid:String, email:String, name:String, sex:String, age:String, onSuccess:@escaping() -> Void){
+        let ref = Database.database().reference()
+        let userRef = ref.child("users")
+        let newUsersRef = userRef.child(uid)
+        newUsersRef.setValue([
+            "E-mail" : email,
+            "Name" : name,
+            "Name-lowcase" : name.lowercased(),
+            "Sex" : sex,
+            "Age" : age
+            ])
+        onSuccess()
+    }
 }
