@@ -15,6 +15,10 @@
 		483538E322C28EEF00279407 /* loginprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538E222C28EEF00279407 /* loginprojectTests.swift */; };
 		483538EE22C28EEF00279407 /* loginprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538ED22C28EEF00279407 /* loginprojectUITests.swift */; };
 		483538FC22C2909F00279407 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538FB22C2909F00279407 /* LineButton.swift */; };
+		483538FE22C29E2200279407 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538FD22C29E2200279407 /* SignInViewController.swift */; };
+		4835390022C29E3000279407 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483538FF22C29E3000279407 /* SignUpViewController.swift */; };
+		4835390222C29E4700279407 /* FindPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390122C29E4700279407 /* FindPwViewController.swift */; };
+		4835390422C29E5200279407 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390322C29E5200279407 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		483538ED22C28EEF00279407 /* loginprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginprojectUITests.swift; sourceTree = "<group>"; };
 		483538EF22C28EEF00279407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483538FB22C2909F00279407 /* LineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		483538FD22C29E2200279407 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		483538FF22C29E3000279407 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4835390122C29E4700279407 /* FindPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewController.swift; sourceTree = "<group>"; };
+		4835390322C29E5200279407 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				483538D622C28EEF00279407 /* LaunchScreen.storyboard */,
 				483538FB22C2909F00279407 /* LineButton.swift */,
 				483538D922C28EEF00279407 /* Info.plist */,
+				483538FD22C29E2200279407 /* SignInViewController.swift */,
+				483538FF22C29E3000279407 /* SignUpViewController.swift */,
+				4835390122C29E4700279407 /* FindPwViewController.swift */,
+				4835390322C29E5200279407 /* MainViewController.swift */,
 			);
 			path = loginproject;
 			sourceTree = "<group>";
@@ -259,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4835390422C29E5200279407 /* MainViewController.swift in Sources */,
+				483538FE22C29E2200279407 /* SignInViewController.swift in Sources */,
 				483538D022C28EEF00279407 /* ViewController.swift in Sources */,
+				4835390222C29E4700279407 /* FindPwViewController.swift in Sources */,
 				483538CE22C28EEF00279407 /* AppDelegate.swift in Sources */,
 				483538FC22C2909F00279407 /* LineButton.swift in Sources */,
+				4835390022C29E3000279407 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

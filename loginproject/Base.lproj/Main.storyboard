@@ -74,7 +74,7 @@
         <!--회원가입-->
         <scene sceneID="Xu2-be-7MS">
             <objects>
-                <viewController id="b5J-7q-SOX" sceneMemberID="viewController">
+                <viewController id="b5J-7q-SOX" customClass="SignUpViewController" customModule="loginproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29L-ao-1qb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,7 +156,7 @@
         <!--Item-->
         <scene sceneID="Qum-Le-I8j">
             <objects>
-                <viewController id="IEu-7y-LKM" sceneMemberID="viewController">
+                <viewController id="IEu-7y-LKM" customClass="MainViewController" customModule="loginproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FyE-ni-2uh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +180,7 @@
         <!--로그인-->
         <scene sceneID="apx-Jz-er0">
             <objects>
-                <viewController id="qaG-Gy-vBY" sceneMemberID="viewController">
+                <viewController id="qaG-Gy-vBY" customClass="SignInViewController" customModule="loginproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bHK-Gy-6w1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +241,7 @@
         <!--비밀번호찾기-->
         <scene sceneID="0Cy-YK-eEc">
             <objects>
-                <viewController id="bvq-Zd-RYu" sceneMemberID="viewController">
+                <viewController id="bvq-Zd-RYu" customClass="FindPwViewController" customModule="loginproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1V-yf-gd7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
