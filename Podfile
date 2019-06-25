@@ -10,6 +10,10 @@ pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'SVProgressHUD'
+pod 'FBSDKLoginKit'
+pod 'GoogleSignIn'
+pod 'Firebase/Storage'
+pod 'PasswordTextField'
 
   # Pods for loginproject
 

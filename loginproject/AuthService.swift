@@ -10,15 +10,19 @@ import Foundation
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import SVProgressHUD
 
 class AuthService{
     static func SignIn(email:String, password:String, onSuccess:@escaping () -> Void, onError:@escaping (_ errorMessage:String?) -> Void ){
+        SVProgressHUD.show()
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil{
+                SVProgressHUD.dismiss()
                 onError(error?.localizedDescription)
                 return
             }
             else{
+                SVProgressHUD.dismiss()
                 onSuccess()
             }
         }
@@ -26,14 +30,17 @@ class AuthService{
     
     
     static func SignUp(email:String, password:String, name:String, age:String, sex:String, onSuccess:@escaping () -> Void, onError:@escaping (_ errorMessage:String?) -> Void){
+        SVProgressHUD.show()
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if error != nil{
+                SVProgressHUD.dismiss()
                 onError(error?.localizedDescription)
                 return
             }
             else{
                 let uid = result?.user.uid
                 setUsers(uid: uid!, email: email, name: name, sex: sex, age: age, onSuccess: {
+                    SVProgressHUD.dismiss()
                     onSuccess()
                 })
             }
@@ -54,12 +61,15 @@ class AuthService{
     
     
     static func FindPw(email:String, onSuccess:@escaping () -> Void, onError:@escaping (_ errorMessage:String?) -> Void){
+        SVProgressHUD.show()
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if error != nil{
+                SVProgressHUD.dismiss()
                 onError(error?.localizedDescription)
                 return
             }
             else{
+                SVProgressHUD.dismiss()
                 onSuccess()
             }
         }
