@@ -30,6 +30,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="로그인"/>
                                         <connections>
+                                            <action selector="signIn:" destination="YLN-23-6bE" eventType="touchUpInside" id="6DT-XM-sce"/>
                                             <segue destination="qaG-Gy-vBY" kind="show" id="qcG-fB-fhe"/>
                                         </connections>
                                     </button>
@@ -42,6 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="회원가입"/>
                                         <connections>
+                                            <action selector="signUp:" destination="YLN-23-6bE" eventType="touchUpInside" id="ncD-Oj-xaI"/>
                                             <segue destination="b5J-7q-SOX" kind="show" id="n2b-h9-DEB"/>
                                         </connections>
                                     </button>
@@ -51,11 +53,17 @@
                                 <rect key="frame" x="81" y="563" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-google-48"/>
+                                <connections>
+                                    <action selector="googleBtn:" destination="YLN-23-6bE" eventType="touchUpInside" id="03s-4G-YqV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJ6-Vr-0ew">
                                 <rect key="frame" x="285" y="563" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-facebook-48"/>
+                                <connections>
+                                    <action selector="facebookBtn:" destination="YLN-23-6bE" eventType="touchUpInside" id="5sL-oW-fXP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -83,6 +91,9 @@
                                 <rect key="frame" x="134" y="354" width="175" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="사진선택"/>
+                                <connections>
+                                    <action selector="pictureBtn:" destination="b5J-7q-SOX" eventType="touchUpInside" id="uJI-HF-qqw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Into the E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yUm-Ps-UaY">
                                 <rect key="frame" x="128" y="417" width="186" height="30"/>
@@ -130,6 +141,9 @@
                                 <state key="normal" title="회원가입">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUp:" destination="b5J-7q-SOX" eventType="touchUpInside" id="cGu-kr-aEd"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_user" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-Zz-wVC">
                                 <rect key="frame" x="94" y="161" width="255" height="173"/>
@@ -146,8 +160,20 @@
                         <viewLayoutGuide key="safeArea" id="6MV-0v-Cxc"/>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="HCl-58-h8I">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="ATS-ST-co3"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="ATS-ST-co3">
+                            <connections>
+                                <action selector="backBtn:" destination="b5J-7q-SOX" id="kOo-Mq-xFZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTF" destination="qSC-PJ-YeT" id="XvE-BB-mng"/>
+                        <outlet property="emailTF" destination="yUm-Ps-UaY" id="lDJ-hw-Gn7"/>
+                        <outlet property="imageVw" destination="Mxi-Zz-wVC" id="aQB-NO-f4p"/>
+                        <outlet property="nameTF" destination="9jd-aR-KfV" id="WNg-IM-rYS"/>
+                        <outlet property="passwordTF" destination="taR-NY-gG2" id="TxX-Wv-MeJ"/>
+                        <outlet property="sexTF" destination="Pvy-LU-FvK" id="mTv-QA-wBN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SK-B4-qlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,6 +192,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="로그아웃"/>
+                                <connections>
+                                    <action selector="signOut:" destination="IEu-7y-LKM" eventType="touchUpInside" id="7e1-Tg-ujc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90943738350000003" green="1" blue="0.41237751369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -219,6 +248,9 @@
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="qaG-Gy-vBY" eventType="touchUpInside" id="7rr-Ik-wJS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,8 +263,16 @@
                         <viewLayoutGuide key="safeArea" id="5cj-lN-tiK"/>
                     </view>
                     <navigationItem key="navigationItem" title="로그인" id="RCB-dP-Vs7">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="mnc-oh-UQl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="mnc-oh-UQl">
+                            <connections>
+                                <action selector="backBtn:" destination="qaG-Gy-vBY" id="x37-57-cic"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTF" destination="Fqh-NM-PYt" id="N3Y-In-Wfh"/>
+                        <outlet property="passwordTF" destination="cLu-X4-ctV" id="ALT-Ae-HdF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cw2-2Q-xN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,6 +304,9 @@
                                 <state key="normal" title="확인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="okBtn:" destination="bvq-Zd-RYu" eventType="touchUpInside" id="KGg-8I-E9R"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,8 +319,15 @@
                         <viewLayoutGuide key="safeArea" id="h1A-Zt-BWm"/>
                     </view>
                     <navigationItem key="navigationItem" title="비밀번호찾기" id="MNQ-XI-l55">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="0qd-9Q-CKh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="baseline_keyboard_backspace_black_24dp" id="0qd-9Q-CKh">
+                            <connections>
+                                <action selector="backBtn:" destination="bvq-Zd-RYu" id="xWV-rA-hW0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTF" destination="nXO-FM-u1o" id="yhq-uB-OCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tr1-a0-ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signIn(_ sender: Any) {
+    }
+    
+    @IBAction func signUp(_ sender: Any) {
+    }
+    
+    @IBAction func googleBtn(_ sender: Any) {
+    }
+    
+    @IBAction func facebookBtn(_ sender: Any) {
+    }
+    
 }
 

@@ -16,7 +16,9 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signOut(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
