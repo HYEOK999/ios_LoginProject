@@ -24,6 +24,7 @@
 		4835390622C29EC800279407 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390522C29EC800279407 /* AlertService.swift */; };
 		4835390822C2A2E800279407 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4835390722C2A2E800279407 /* GoogleService-Info.plist */; };
 		4835390A22C2A4E800279407 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835390922C2A4E800279407 /* AuthService.swift */; };
+		48DE024422C40D12004352B0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE024322C40D12004352B0 /* Config.swift */; };
 		529A42FC13EE9538EC9ACBF9 /* Pods_loginprojectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB6CFA4B2EE035B42EF6441 /* Pods_loginprojectTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		4835390522C29EC800279407 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		4835390722C2A2E800279407 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4835390922C2A4E800279407 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		48DE024322C40D12004352B0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		72A92FC473C71393FECD0817 /* Pods-loginprojectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginprojectUITests.release.xcconfig"; path = "Target Support Files/Pods-loginprojectUITests/Pods-loginprojectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8DB6CFA4B2EE035B42EF6441 /* Pods_loginprojectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginprojectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D02BF8E3EA8DF1A93D9D05 /* Pods-loginproject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginproject.debug.xcconfig"; path = "Target Support Files/Pods-loginproject/Pods-loginproject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				4835390322C29E5200279407 /* MainViewController.swift */,
 				4835390522C29EC800279407 /* AlertService.swift */,
 				4835390922C2A4E800279407 /* AuthService.swift */,
+				48DE024322C40D12004352B0 /* Config.swift */,
 			);
 			path = loginproject;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				4835390222C29E4700279407 /* FindPwViewController.swift in Sources */,
 				483538CE22C28EEF00279407 /* AppDelegate.swift in Sources */,
 				483538FC22C2909F00279407 /* LineButton.swift in Sources */,
+				48DE024422C40D12004352B0 /* Config.swift in Sources */,
 				4835390622C29EC800279407 /* AlertService.swift in Sources */,
 				4835390022C29E3000279407 /* SignUpViewController.swift in Sources */,
 			);
